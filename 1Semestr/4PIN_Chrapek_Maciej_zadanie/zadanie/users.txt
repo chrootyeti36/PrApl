@@ -1,0 +1,10 @@
+Data;Nauczyciel/Uczeń;Imię;Nazwisko;Adres email;Hasło
+Sun, 16 Oct 2022 18:26:32 +0200;Uczeń;Martyna;Janer;mail@edu.pl;9191
+Mon, 17 Oct 2022 20:17:15 +0200;Nauczyciel;Włodzimierz;Biały;panwlodek420@o2.pl;qwerty1qaz!
+Mon, 17 Oct 2022 20:51:00 +0200;Uczeń;Maciej;Chrapek;maciej.chrapek@live.zs1mm.edu.pl;qaz123!
+Mon, 17 Oct 2022 20:53:18 +0200;Uczeń;Jeremiasz;Różalski;wazupelo@46.com;qaz123!
+Mon, 17 Oct 2022 21:41:13 +0200;Nauczyciel;Monika;Pszonka;monika.pszonka@live.zs1mm.edu.pl;zaq1@WSX
+Mon, 17 Oct 2022 21:44:36 +0200;Nauczyciel;test;hhhh;mail@zs1.pl;123
+Mon, 17 Oct 2022 21:45:38 +0200;Nauczyciel;Stanisław;Wokulski;stachu@wp.pl;ZAQwsx
+Tue, 18 Oct 2022 11:44:36 +0200;Nauczyciel;Antoni;Śledziewski;antoni.sledziewski@live.zs1mm.edu.pl;qaz123!
+Tue, 08 Nov 2022 11:56:24 +0100;Uczeń;Antoni;Śledziwski;an.sle@live.zs1mm.edu.pl;qwerty123!

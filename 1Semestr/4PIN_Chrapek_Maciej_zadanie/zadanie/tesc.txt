@@ -1,0 +1,24 @@
+Napisz formularz rejestracji nowego użytkownika i skrypt odbierający dane z formularza i zapisujący do pliku, oraz skrypt wyświetlający 
+założone konta (bez haseł).
+
+Formularz powinien zawierać:
+
+pole select z wyborem rodzaju konta (uczeń, nauczyciel)
+pole imię
+pole nazwisko
+pole mail
+pole hasło
+pole powtórz hasło
+W formularzu proszę zadbać o wygląd.
+Jeśli skrypt odbierający dane stwierdzi, że hasła się różnią, ma nie zapisywać takiego konta, ale wyświetlić odpowiedni komunikat i link powrotu do formularza.
+
+Na celującą skrypt powinien umożliwiać kasowanie i sortowanie użytkowników
+Swoje rozwiązania spakuj i wgraj na teamsy. 
+
+
+http://kursjs.pl/kurs/formularze/formularze-walidacja?
+https://www.w3schools.com/howto/howto_js_password_validation.asp
+https://www.javatpoint.com/confirm-password-validation-in-javascript
+https://www.upgrad.com/blog/password-validation-in-javascript/
+https://www.geeksforgeeks.org/how-to-validate-confirm-password-using-javascript/
+https://github.com/topics/password-validation?l=javascript

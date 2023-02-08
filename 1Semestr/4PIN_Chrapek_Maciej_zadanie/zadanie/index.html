@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <title>Rejestracja</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Witaj w iDzienniczku!</h1>
+        <form action="input.php" method="get">
+            <p>
+                <label for="who">Kim jesteś?<br>
+                    <select name="who" class="who">
+                        <option value="Nauczyciel">Nauczyciel</option>
+                        <option value="Uczeń">Uczeń</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label for="name">Podaj swoje imię<br>
+                    <input type="text" name="name" class="name" placeholder="Imię" required>
+                </label>
+            </p>
+            <p>
+                <label for="surname">Podaj swoje nazwisko<br>
+                    <input type="text" name="surname" class="surname" placeholder="Nazwisko" required>
+                </label>
+            </p>
+            <p>
+                <label for="email">Podaj swój e-mail kontaktowy<br>
+                    <input type="email" name="email" class="email" placeholder="mail@skrzynka.pl" required>
+                </label>
+            </p>
+            <p>
+                <label for="pass">Podaj hasło<br>
+                    <input type="password" name="pass" id="pass" required>
+                </label>
+            </p>
+            <p>
+                <label for="repass">Powtórz hasło<br>
+                    <input type="password" name="repass" id="repass" required>
+                </label>
+            </p>
+            <input type="submit" value="Wyślij zgłoszenie!" onclick="password()" class="subutton">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

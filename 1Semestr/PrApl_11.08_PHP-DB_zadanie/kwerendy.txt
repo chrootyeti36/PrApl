@@ -1,0 +1,19 @@
+- Zapytanie 1: wybierające jedynie pola nazwa i cena z tabeli Uslugi
+select nazwa, cena from uslugi
+
+- Zapytanie 2: wybierające jedynie pola imie, rodzaj, nastepna_wizyta, telefon z tabeli Zwierzeta dla tych rekordów, dla których następna_wizyta jest różna od 0
+select imie, rodzaj, nastepna_wizyta, telefon from zwierzeta where nastepna_wizyta <> 0
+
+- Zapytanie 3: korzystające z relacji i wybierające jedynie pola rodzaj z tabeli Zwierzeta oraz odpowiadające im pola nazwa z tabeli Uslugi
+select z.rodzaj, u.nazwa from zwierzeta z join uslugi u on z.usluga_id = u.id
+
+- Zapytanie 4: zwracające minimalną cenę spośród wszystkich usług zapisanych w tabeli Uslugi
+select min(cena) from uslugi
+
+
+
+Odpowiedzi:
+1. SELECT `nazwa`,`cena` FROM `uslugi`
+2. select  imie, rodzaj, nastepna_wizyta, telefon from zwierzeta where nastepna_wizyta!=0
+3. 
+4. select min(cena) from uslugi
