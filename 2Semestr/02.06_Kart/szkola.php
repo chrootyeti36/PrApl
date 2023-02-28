@@ -38,31 +38,37 @@
         {
             echo "
             <h4>{$rek['imie']} {$rek['nazwisko']}</h4>
-            <p>{$rek['dataur']}</p>
+            <p>{$rek['dataur']}  <a href=\"szkola.php?delid=$id\">Usuń</a></p>
             ";
         }
         $pol=null;
     ?>
 
-    <?php
+    <?php   
         // Skrypt na 6
-        // $pol=new PDO('mysql:dbhost=localhost;dbname=szkola','root','');
-        // $php1=$pol->query('SELECT id, imie, nazwisko, dataur from uczniowie');
-        // $a=0;
-        // foreach($php1 as $rek)
-        // {
-        //     $id=$a;
-        //     echo "
-        //     <h4>{$rek['imie']} {$rek['nazwisko']}".'<form action="post"><input type="submit" value="usuń" name="'.$id.'"></form>'."</h4>
-        //     <p>{$rek['dataur']}</p>
-        //     ";
-        //     $a++;
-        // }
-        // Szczerze mówiąc, myślę, że należy w tym wypadku wykonać jakiś button który uruchamiałby skrypt usuwający dane. Tylko, że ten skrypt musi wiedzieć, jaki rekord usunąć.
-        // jeszce jest opcja, żeby pobierać id z bazy, następnie przypisywać je do rekordów i zrobić po prostu skrypt, który usuwałby określony rekord. Jestem w stanie to zrobić, 
-        // ale niestety nie wyrobię się w czasie dzisiejszych zajęć (07.02). Udanych ferii!
-        
-        // $pol=null;
+
+            if(isset($_GET['delid']))
+            {
+                echo "{$_GET['delid']}";
+            }
+
+        /* $pol=new PDO('mysql:dbhost=localhost;dbname=szkola','root','');
+         $php1=$pol->query('SELECT id, imie, nazwisko, dataur from uczniowie');
+         $a=0;
+         foreach($php1 as $rek)
+         {
+             $id=$a;
+             echo "
+             <h4>{$rek['imie']} {$rek['nazwisko']}".'<form action="post"><input type="submit" value="usuń" name="'.$id.'"></form>'."</h4>
+             <p>{$rek['dataur']}</p>
+             ";
+             $a++;
+         }
+         Szczerze mówiąc, myślę, że należy w tym wypadku wykonać jakiś button który uruchamiałby skrypt usuwający dane. Tylko, że ten skrypt musi wiedzieć, jaki rekord usunąć.
+         jeszce jest opcja, żeby pobierać id z bazy, następnie przypisywać je do rekordów i zrobić po prostu skrypt, który usuwałby określony rekord. Jestem w stanie to zrobić, 
+         ale niestety nie wyrobię się w czasie dzisiejszych zajęć (07.02). Udanych ferii!
+         
+         $pol=null; */
 
         
 
