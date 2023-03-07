@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="uczen"></p>
+<p id="okno"></p>
+<script>
+    const uczen={
+        imie:"Jan",
+        nazwisko:"Kowalski",
+        klasa:"5",
+        wiek:"19",
+        getFullInfo: function(){
+            return this.imie+", "+this.nazwisko+", "+this.klasa+", "+this.wiek;
+        },
+        promocja:function(){
+            if(this.klasa<5)
+            {
+                this.klasa++;
+            }
+            else
+            {
+                this.klasa="uczeń jest absolwentem";
+            }
+            return this.klasa;
+        }
+    }
+    document.getElementById("uczen").innerHTML=uczen.getFullInfo()+", "+uczen.promocja();
+
+    const okno={
+        szer:"50",
+        wys:"100",
+        stan:"zamknięte/otwarte",
+        getFullInfo:function(){
+            return this.szer+", "+this.wys+", "+this.stan;
+        },
+        otworz:function(){
+            this.stan="otwarte";
+            return this.stan;
+        },
+        zamknij:function(){
+            this.stan="zamknięte";
+            return this.stan;
+        }
+    }
+    document.getElementById("okno").innerHTML=okno.getFullInfo()+", "+okno.otworz()+", "+okno.zamknij();
+</script>
+
+
+
+
+<!-- <script>
+    const car={
+        type:"Fiat",
+        model:"500",
+        color:"white",
+        getFullInfo: function(){
+            return this.type+", "+this.model+", "+this.color;
+        }
+    }
+    document.getElementById("demo").innerHTML="The full car info: "+car.getFullInfo();
+</script> -->
+
+</body>
+</html>
