@@ -9,35 +9,34 @@
 </head>
 
 <body>
-    <script>
-        function alphaUczen(imie, nazwisko, klasa, wiek) {
-            this.imie = imie,
-                this.nazwisko = nazwisko,
-                this.klasa = klasa,
-                this.wiek = wiek,
-                this.getFullInfo = function () {
-                    return this.imie + ", " + this.nazwisko + ", " + this.klasa + ", " + this.wiek + ", " + this.promocja();
-                };
-            this.promocja = function () {
-                if (this.klasa != "absolwent") {
-                    if (this.klasa < 5) {
-                        this.klasa++;
-                        this.klasa = "promocja do: " + this.klasa;
-                    }
-                }
-                else {
-                    this.klasa = "uczeń jest absolwentem";
-                }
-                return this.klasa;
+<script>
+function alphaUczen(imie, nazwisko, klasa, wiek) {
+    this.imie = imie,
+        this.nazwisko = nazwisko,
+        this.klasa = klasa,
+        this.wiek = wiek,
+        this.getFullInfo = function () {
+            return this.imie + ", " + this.nazwisko + ", " + this.klasa + ", " + this.wiek + ", " + this.promocja();
+        };
+    this.promocja = function () {
+        if (this.klasa != "absolwent") {
+            if (this.klasa < 5) {
+                this.klasa++;
+                this.klasa = "promocja do: " + this.klasa;
             }
         }
+        else {
+            this.klasa = "uczeń jest absolwentem";
+        }
+        return this.klasa;
+    }
+}
 
-    const stasiu = new alphaUczen("Stanislaw", "Juzkiewicz", 5, 17);
-    const kazik = new alphaUczen("Kazimierz", "Bakowski", 2, 17);
+const stasiu = new alphaUczen("Stanislaw", "Juzkiewicz", 5, 17);
+const kazik = new alphaUczen("Kazimierz", "Bakowski", 2, 17);
 
-    console.log(stasiu.getFullInfo());
-    console.log(kazik.getFullInfo());
-
+console.log(stasiu.getFullInfo());
+console.log(kazik.getFullInfo());
     </script>
 </body>
 
