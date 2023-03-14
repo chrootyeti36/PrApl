@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+class alphaUczen{
+    constructor(imie,nazwisko,klasa,wiek){
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.klasa = klasa;
+        this.wiek = wiek;
+    }
+    getFullInfo() {
+        return this.imie + ", " + this.nazwisko + ", " + this.klasa + ", " + this.wiek + ", " + this.promocja();
+    }
+    promocja() {
+        if (this.klasa != "absolwent") {
+            if (this.klasa < 5) {
+                this.klasa++;
+                this.klasa = "promocja do: " + this.klasa;
+            }
+        }
+        else {
+            this.klasa = "uczeń jest absolwentem";
+        }
+        return this.klasa;
+    }
+}
+const stasiu = new alphaUczen("Stanislaw", "Juzkiewicz", "absolwent", 17);
+const kazik = new alphaUczen("Kazimierz", "Bakowski", 2, 17);
+
+//console.log(stasiu.getFullInfo());
+//console.log(kazik.getFullInfo());
+
+class alphaOkno{
+    constructor(szer,wys,stan){
+        this.szer = szer;
+        this.wys = wys;
+        this.stan = stan;
+    }
+    getFullInfo() {
+            return this.szer + ", " + this.wys + ", " + this.stan;
+        }
+    otworz() {
+            this.stan = "otwarte";
+            return this.stan;
+        }
+    zamknij(){
+        this.stan = "zamknięte";
+        return this.stan;
+    }
+}
+
+const sufit = new alphaOkno(50,100,"zamknięte");
+const salon = new alphaOkno(180,200,"otwarte");
+
+console.log(sufit.getFullInfo());
+console.log(salon.getFullInfo());
+
+    </script>
+</body>
+
+</html>

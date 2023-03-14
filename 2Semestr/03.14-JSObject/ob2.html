@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.</title>
+</head>
+
+<body>
+    <script>
+        function alphaUczen(imie, nazwisko, klasa, wiek) {
+            this.imie = imie,
+                this.nazwisko = nazwisko,
+                this.klasa = klasa,
+                this.wiek = wiek,
+                this.getFullInfo = function () {
+                    return this.imie + ", " + this.nazwisko + ", " + this.klasa + ", " + this.wiek + ", " + this.promocja();
+                };
+            this.promocja = function () {
+                if (this.klasa != "absolwent") {
+                    if (this.klasa < 5) {
+                        this.klasa++;
+                        this.klasa = "promocja do: " + this.klasa;
+                    }
+                }
+                else {
+                    this.klasa = "uczeń jest absolwentem";
+                }
+                return this.klasa;
+            }
+        }
+
+    const stasiu = new alphaUczen("Stanislaw", "Juzkiewicz", 5, 17);
+    const kazik = new alphaUczen("Kazimierz", "Bakowski", 2, 17);
+
+    console.log(stasiu.getFullInfo());
+    console.log(kazik.getFullInfo());
+
+    </script>
+</body>
+
+</html>
